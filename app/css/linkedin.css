@@ -1,0 +1,22 @@
+/* bring back <blink>! */
+@-webkit-keyframes blink { /* Chrome, Safari 5+ */
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    51% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes blink { /* Chrome, Firefox 16+, IE 10+, Opera 12.10+ */
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    51% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* apply <blink> to H1s */
+body {
+    -webkit-animation: blink 1s infinite; /* Chrome, Safari 5+ */
+    -moz-animation: blink 1s infinite; /* Firefox 5-15 */
+    -o-animation: blink 1s infinite; /* Opera 12.00 */
+    animation: blink 1s infinite; /* Chrome, Firefox 16+, IE 10+, Opera 12.10+ */
+}
