@@ -26,6 +26,6 @@
     
     var rand = Math.floor(Math.random()*quoteArray.length); 
     document.getElementById("quote").innerHTML = quoteArray[rand];
- };
+};
  
 

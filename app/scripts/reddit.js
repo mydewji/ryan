@@ -1,7 +1,10 @@
 'use strict';
 
 chrome.storage.sync.get('enableReddit', function(item) {
-  if (item.enableReddit == true) {
+  if (item.enableReddit == false) {
+      console.log("Ryan - reddit mod disabled");
+  }
+  else {
       var links, i, le;
       links = document.getElementsByTagName('a');
       for (i = 0, le = links.length; i < le; i++) {
